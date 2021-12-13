@@ -3,7 +3,7 @@ import React from "react";
 const Champions = () => {
     return (
         <>
-            <p>Ha</p>
+            <p>Champions</p>
         </>
     )
 };
