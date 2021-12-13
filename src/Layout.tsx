@@ -1,17 +1,18 @@
 import React from 'react';
 import Home from './pages/Home';
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Champions from './pages/Champions';
+import Navbar from './components/Navbar';
 
 const Layout = () => {
     return (
-        <Router>            
+        <BrowserRouter>
+            <Navbar />
             <Routes>
                 <Route path="/champions" element={<Champions />}></Route>
-                <Route path="/" element={<Home />}></Route>
+                <Route path="/home" element={<Home />}></Route>
             </Routes>
-
-        </Router>
+        </BrowserRouter>
     )
 }
 
